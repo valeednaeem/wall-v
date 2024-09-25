@@ -57,3 +57,11 @@ export default [
     ignores: ['dist', 'node_modules', '.github', 'types.generated.d.ts', '.astro'],
   },
 ];
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export",  // <=== enables static exports
+  reactStrictMode: true,
+};
+
+module.exports = nextConfig;
