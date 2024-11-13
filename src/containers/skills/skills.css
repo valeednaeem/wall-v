@@ -1,0 +1,94 @@
+:root {
+    --quantity: 8px;
+}
+
+.slider {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        #ffffff 10% 90%,
+        transparent);
+    width: 95%;
+    margin-inline: auto;
+}
+
+.slider .list .item svg {
+    height: 60px;
+    width: auto;
+    object-fit: cover;
+    display: inline-block;
+    clear: left;
+}
+
+/* svg path {
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-width: 0.1;
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    animation: phpLogoAnimation 4s ease-in-out 1 forwards;
+}
+
+@keyframes phpLogoAnimation {
+    0% {
+        stroke-dashoffset: 50;
+    }
+    100% {
+        fill: #777bb3;
+        stroke-dashoffset: 0;
+    }
+} */
+
+.slider .list .item {
+    margin-right: 8px;
+}
+
+/*desktops - higher resolution*/
+@media (min-width: 1281px) {
+    .slider .list {
+        display: flex;
+        justify-content: center;
+    }
+}
+/*laptops, desktops*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .slider .list {
+        display: flex;
+        justify-content: center;
+    }
+}
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .slider .list {
+        display: flex;
+        justify-content: center;
+    }
+}
+/*tablets, ipads (landscape)*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .slider .list {
+        display: flex;
+        justify-content: center;
+    }
+}
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .slider .list {
+        justify-content: center;
+    }
+}
+/*smartphones mobiles (portrait)*/
+@media (min-width: 320px) and (max-width: 480px) {
+    .slider .list {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 319px) {
+    .slider .list {
+        justify-content: center;
+    }
+}

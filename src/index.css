@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --font-family: 'Manrope', sans-serif;
+
+  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+
+  --color-bg: #040C18;
+  --color-footer: #031B34;
+  --color-blog: #042c54;
+  --color-text: #81AFDD;
+  --color-subtext: #FF8A71;
+}
+
 body {
-  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +30,51 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/*desktops - higher resolution*/
+@media (min-width: 1281px) {
+  body {
+    padding: 2rem 3rem;
+  }
+}
+/*laptops, desktops*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  body {
+    padding: 2rem 2rem;
+  }
+}
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    padding: 2rem 1.5rem;
+  }
+}
+/*tablets, ipads (landscape)*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  body {
+    padding: 1.5rem 2rem;
+  }
+}
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+    padding: 1rem 1.5rem;
+  }
+}
+/*smartphones mobiles (portrait)*/
+@media (max-width: 480px) {
+  body {
+    padding: 1rem 2rem;
+  }
+
+  .header-content h1 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .gradient__text {
+    font-size: 22px;
+    line-height: 18px;
+  }
 }
