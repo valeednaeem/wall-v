@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.04fb4e03.css",
+    "main.js": "/static/js/main.4a11b10f.js",
+    "static/js/453.bc7ff4ef.chunk.js": "/static/js/453.bc7ff4ef.chunk.js",
+    "static/media/RageItalic.woff": "/static/media/RageItalic.b6fb44d40afe4636eb2a.woff",
+    "static/media/apache-official.svg": "/static/media/apache-official.929223b2a41d8c1940e4e4a7dd4b73c3.svg",
+    "static/media/jquery-official.svg": "/static/media/jquery-official.4eaa462b6f87664f1b39f4ac61f304bc.svg",
+    "static/media/xampp-logo.svg": "/static/media/xampp-logo.9a4aa5ddae38e9d5f578748a4c48ec83.svg",
+    "static/media/transparent-logo-yellow.svg": "/static/media/transparent-logo-yellow.0df34940dc0927549a4ca7eb2dcce49a.svg",
+    "static/media/nextjs-ar21.svg": "/static/media/nextjs-ar21.066e484ace046643edaa54a798635c90.svg",
+    "static/media/nodejs-icon.svg": "/static/media/nodejs-icon.502737ea1f44b9be4170cafd2bace4e7.svg",
+    "static/media/reactjs-icon.svg": "/static/media/reactjs-icon.6c1d44b8c59f0f72ff199a54ceed774c.svg",
+    "index.html": "/index.html",
+    "main.04fb4e03.css.map": "/static/css/main.04fb4e03.css.map",
+    "main.4a11b10f.js.map": "/static/js/main.4a11b10f.js.map",
+    "453.bc7ff4ef.chunk.js.map": "/static/js/453.bc7ff4ef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04fb4e03.css",
+    "static/js/main.4a11b10f.js"
+  ]
+}
