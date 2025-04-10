@@ -29,22 +29,41 @@
   color: #61dafb;
 }
 
-
 a {
   color: unset;
   text-decoration: none;
 }
 
 .gradient__bg {
-  background: -moz-radial-gradient(circle at 3% 25%, rgba(0, 42, 83, 1) 0%, rgba(4, 12, 24, 0.8) 100%);
+  background: -moz-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 42, 83, 1) 0%,
+    rgba(4, 12, 24, 0.8) 100%
+  );
 
-  background: -webkit-radial-gradient(circle at 3% 25%, rgba(0, 42, 83, 1) 0%, rgba(4, 12, 24, 0.8) 100%);
+  background: -webkit-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 42, 83, 1) 0%,
+    rgba(4, 12, 24, 0.8) 100%
+  );
 
-  background: -o-radial-gradient(circle at 3% 25%, rgba(0, 42, 83, 1) 0%, rgba(4, 12, 24, 0.8) 100%);
+  background: -o-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 42, 83, 1) 0%,
+    rgba(4, 12, 24, 0.8) 100%
+  );
 
-  background: -ms-radial-gradient(circle at 3% 25%, rgba(0, 42, 83, 1) 0%, rgba(4, 12, 24, 0.8) 100%);
+  background: -ms-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 42, 83, 1) 0%,
+    rgba(4, 12, 24, 0.8) 100%
+  );
 
-  background: radial-gradient(circle at 3% 25%, rgba(0, 42, 83, 1) 0%, rgba(4, 12, 24, 0.8) 100%);
+  background: radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 42, 83, 1) 0%,
+    rgba(4, 12, 24, 0.8) 100%
+  );
 }
 
 .gradient__text {
@@ -64,20 +83,46 @@ a {
 
 .section {
   padding: 0.5rem;
-  margin: 0.5rem;
+  margin: 1.5rem;
+  max-width: 100%;
+}
+
+.section__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.container__cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*desktops - higher resolution*/
-@media (min-width: 1281px) {}
+@media (min-width: 1281px) {
+}
 
 /*laptops, desktops*/
-@media (min-width: 1025px) and (max-width: 1280px) {}
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
 
 /*tablets, ipads (portrait)*/
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1024px) {
+}
 
 /*tablets, ipads (landscape)*/
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
 
 /*low resolution tablets, mobiles (landscape)*/
 @media (min-width: 481px) and (max-width: 767px) {
@@ -88,7 +133,6 @@ a {
   .section__margin {
     margin: 4rem;
   }
-
 }
 
 /*smartphones mobiles (portrait)*/

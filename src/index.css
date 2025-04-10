@@ -63,18 +63,4 @@ code {
   }
 }
 /*smartphones mobiles (portrait)*/
-@media (max-width: 480px) {
-  body {
-    padding: 1rem 2rem;
-  }
-
-  .header-content h1 {
-    font-size: 20px;
-    line-height: 22px;
-  }
-
-  .gradient__text {
-    font-size: 22px;
-    line-height: 18px;
-  }
-}
+@media (max-width: 480px) {}

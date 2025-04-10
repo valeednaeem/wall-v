@@ -1,84 +1,124 @@
 import React from 'react'
 import './skills.css'
-// import php from './img/php.svg'
-// import mysql from './img/mysql.svg'
-// import wordpress from './img/wordpress.svg'
-import apache from './img/apache-official.svg'
-import nextjs from './img/nextjs-ar21.svg'
-import xampp from './img/xampp-logo.svg'
-import jquery from './img/jquery-official.svg'
-// import linux from './img/linux-ar21.svg'
-import nodejs from './img/nodejs-icon.svg'
-import react from './img/reactjs-icon.svg'
+//html icons
+import html from './img/w3_html5-ar21.png'
+import htmlMob from './img/mobile/w3_html5-icon.png'
+//css icons
+import css from './img/w3_css-ar21.png'
+import cssMob from './img/mobile/w3_css-icon.png'
+//javascript icons
+import javascript from './img/javascript.png'
+import javascriptMob from './img/mobile/javascript-js.png'
+//jquery icons
+import jquery from './img/jquery-ar21.png'
+import jqueryMob from './img/mobile/jquery-icon.png'
+//php icons
+import php from './img/php-ar21.png'
+import phpMob from './img/mobile/php-icon.png'
+//phpmyadmin icons
+import phpMyAdmin from './img/phpmyadmin-ar21.png'
+import phpMyAdminMob from './img/mobile/phpmyadmin-icon.png'
+//wordpress icons
+import wordpress from './img/wordpress-ar21.png'
+import wordpressMob from './img/mobile/wordpress-icon.png'
+//cordova icons
+import cordova from './img/apache_cordova-ar21.png'
+import cordovaMob from './img/mobile/apache_cordova-icon.png'
+//apache icons
+import apache from './img/apache-official.png'
+import apacheMob from './img/mobile/apache-icon.png'
+//linux icons
+import linux from './img/linux-ar21.png'
+import linuxMob from './img/mobile/linux-icon.png'
+//react icons
+import react from './img/reactjs-ar21.png'
+import reactMob from './img/mobile/reactjs-icon.png'
+//next icons
+import next from './img/nextjs-ar21.png'
+import nextMob from './img/mobile/nextjs-icon.png'
+//nodejs icons
+import node from './img/nodejs-ar21.png'
+import nodeMob from './img/mobile/nodejs-icon.png'
+//mongodb icons
+import mongodb from './img/mongodb-ar21.png'
+import mongodbMob from './img/mobile/mongodb-icon.png'
+//tailwindcss icons
+import tailwindCss from './img/tailwindcss-ar21.png'
+import tailwindCssMob from './img/mobile/tailwindcss-icon.png'
+//xampp icons for both mobile and desktop devices
+import xampp from './img/xampp-logo.png'
 
 const Skills = () => {
     return (
 
-        <div className='slider section'>
-          <div className="list">
-              <div className="item item1">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="60" width="120">
-                        <defs>
-                            <clipPath id="A">
-                                <path d="M11.52 162C11.52 81.677 135.307 16.56 288 16.56S564.48 81.677 564.48 162 440.693 307.44 288 307.44 11.52 242.322 11.52 162" />
-                            </clipPath>
-                            <radialGradient cx="0" cy="0" fx="0" fy="0" gradientTransform="matrix(363.05789,0,0,-363.05789,177.52002,256.30713)" gradientUnits="userSpaceOnUse" id="B" r="1" spreadMethod="pad">
-                                <stop offset="0" stop-color="#aeb2d5" />
-                                <stop offset=".3" stop-color="#aeb2d5" />
-                                <stop offset=".75" stop-color="#484c89" />
-                                <stop offset="1" stop-color="#484c89" />
-                            </radialGradient>
-                            <clipPath id="C">
-                                <path d="M0 324h576V0H0v324z" />
-                            </clipPath>
-                            <clipPath id="D">
-                                <path d="M0 324h576V0H0v324z" />
-                            </clipPath>
-                        </defs>
-                        <g transform="matrix(.164883 0 0 -.162632 11.737077 58.329876)">
-                            <g clip-path="url(#A)">
-                                <path d="M11.52 162C11.52 81.677 135.307 16.56 288 16.56S564.48 81.677 564.48 162 440.693 307.44 288 307.44 11.52 242.322 11.52 162" fill="url(#B)" />
-                            </g>
-                            <g clip-path="url(#C)">
-                                <path d="M288 27.36c146.73 0 265.68 60.28 265.68 134.64S434.73 296.64 288 296.64 22.32 236.36 22.32 162 141.27 27.36 288 27.36" fill="#777bb3" />
-                            </g>
-                            <g clip-path="url(#D)">
-                                <path d="M161.734 145.307c12.065 0 21.072 2.225 26.77 6.61 5.638 4.34 9.532 11.862 11.573 22.353 1.903 9.806 1.178 16.653-2.154 20.348-3.407 3.774-10.773 5.688-21.893 5.688h-19.28l-10.69-55h15.673zM98.67 77.557c-.895 0-1.745.4-2.314 1.092a3 3 0 0 0-.63 2.48l28.328 145.75a3 3 0 0 0 2.945 2.427h61.054c19.188 0 33.47-5.2 42.447-15.487 9.025-10.33 11.812-24.772 8.283-42.92-1.436-7.394-3.906-14.26-7.34-20.41-3.44-6.155-7.984-11.85-13.51-16.93-6.616-6.192-14.104-10.682-22.236-13.324-8.003-2.607-18.28-3.93-30.548-3.93h-24.722l-7.06-36.322a3 3 0 0 0-2.944-2.428H98.67z" />
-                                <path d="M159.224 197.307h16.808c13.42 0 18.083-2.945 19.667-4.7 2.628-2.914 3.124-9.058 1.435-17.767-1.898-9.75-5.416-16.663-10.458-20.545-5.162-3.974-13.554-5.988-24.94-5.988H149.7l9.523 49zm28.83 35H127a6 6 0 0 1-5.889-4.855L92.783 81.7a6 6 0 0 1 5.889-7.144h31.75a6 6 0 0 1 5.89 4.855l6.588 33.895h22.25c12.582 0 23.174 1.372 31.48 4.077 8.54 2.775 16.4 7.48 23.354 13.984 5.752 5.292 10.5 11.232 14.08 17.657s6.17 13.594 7.668 21.302c3.715 19.104.697 34.402-8.97 45.466-9.572 10.958-24.614 16.514-44.706 16.514m-45.633-90h19.313c12.8 0 22.336 2.41 28.6 7.234s10.492 12.875 12.688 24.157c2.1 10.832 1.144 18.476-2.87 22.93s-12.06 6.68-24.12 6.68h-21.754l-11.856-61m45.633 84c18.367 0 31.766-4.82 40.188-14.46s10.957-23.098 7.597-40.375c-1.383-7.117-3.722-13.624-7.015-19.52s-7.602-11.293-12.922-16.184c-6.34-5.933-13.383-10.16-21.133-12.68-7.75-2.525-17.62-3.782-29.62-3.782h-27.196l-7.53-38.75h-31.75L127 226.307h61.055" fill="#fff" />
-                                <path d="M311.583 116.307c-.896 0-1.745.4-2.314 1.092s-.802 1.6-.63 2.48l12.53 64.49c1.192 6.133.898 10.535-.827 12.395-1.056 1.137-4.228 3.044-13.607 3.044h-22.702l-15.755-81.072a3 3 0 0 0-2.945-2.428h-31.5a3 3 0 0 0-2.945 3.572l28.328 145.75a3 3 0 0 0 2.945 2.427h31.5a3 3 0 0 0 2.945-3.572l-6.836-35.178h24.422c18.605 0 31.22-3.28 38.57-10.028 7.5-6.884 9.827-17.89 6.947-32.72l-13.18-67.825a3 3 0 0 0-2.945-2.428h-32z" />
-                                <path d="M293.66 271.057h-31.5a6 6 0 0 1-5.89-4.855l-28.328-145.75a6 6 0 0 1 5.89-7.144h31.5a6 6 0 0 1 5.89 4.855l15.283 78.645h20.23c9.363 0 11.328-2 11.407-2.086.568-.61 1.315-3.44.082-9.78l-12.53-64.49a6 6 0 0 1 5.89-7.144h32a6 6 0 0 1 5.89 4.855l13.18 67.825c3.093 15.92.447 27.864-7.86 35.5-7.928 7.28-21.208 10.82-40.6 10.82h-20.784l6.143 31.605a6 6 0 0 1-5.89 7.145m0-6l-7.53-38.75h28.062c17.657 0 29.836-3.082 36.54-9.238s8.71-16.14 6.032-29.938l-13.18-67.824h-32l12.53 64.488c1.426 7.336.902 12.34-1.574 15.008s-7.746 4.004-15.805 4.004H281.56l-16.226-83.5h-31.5l28.328 145.75h31.5" fill="#fff" />
-                                <path d="M409.55 145.307c12.065 0 21.072 2.225 26.77 6.61 5.638 4.34 9.532 11.86 11.574 22.353 1.903 9.806 1.178 16.653-2.155 20.348-3.407 3.774-10.773 5.688-21.893 5.688h-19.28l-10.69-55h15.673zm-63.062-67.75c-.895 0-1.745.4-2.314 1.092a3 3 0 0 0-.631 2.48l28.328 145.75a3 3 0 0 0 2.946 2.427h61.053c19.19 0 33.47-5.2 42.448-15.487 9.025-10.33 11.81-24.77 8.283-42.92-1.438-7.394-3.907-14.26-7.342-20.41-3.44-6.155-7.984-11.85-13.51-16.93-6.616-6.192-14.104-10.682-22.236-13.324-8.003-2.607-18.28-3.93-30.548-3.93H388.24l-7.057-36.322a3 3 0 0 0-2.946-2.428h-31.75z" />
-                                <path d="M407.04 197.307h16.808c13.42 0 18.083-2.945 19.667-4.7 2.63-2.914 3.125-9.058 1.435-17.766-1.898-9.75-5.417-16.664-10.458-20.546-5.162-3.974-13.554-5.988-24.94-5.988h-12.033l9.522 49zm28.83 35h-61.054a6 6 0 0 1-5.889-4.855L340.6 81.7a6 6 0 0 1 5.889-7.144h31.75a6 6 0 0 1 5.89 4.855l6.587 33.895h22.25c12.582 0 23.174 1.372 31.48 4.077 8.54 2.775 16.4 7.48 23.356 13.986 5.752 5.29 10.488 11.23 14.078 17.655s6.17 13.594 7.668 21.302c3.715 19.105.697 34.403-8.97 45.467-9.572 10.957-24.613 16.513-44.706 16.513m-45.632-90h19.312c12.8 0 22.336 2.41 28.6 7.234s10.492 12.875 12.688 24.157c2.102 10.832 1.145 18.476-2.87 22.93s-12.06 6.68-24.12 6.68h-21.754l-11.855-61m45.632 84c18.367 0 31.766-4.82 40.188-14.46s10.957-23.098 7.597-40.375c-1.383-7.117-3.722-13.624-7.015-19.52s-7.602-11.293-12.922-16.184c-6.34-5.933-13.383-10.16-21.133-12.68-7.75-2.525-17.62-3.782-29.62-3.782h-27.196l-7.53-38.75h-31.75l28.328 145.75h61.054" fill="#fff" />
-                            </g>
-                        </g>
-                    </svg>
-              </div>
-              <div className="item item2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="52" viewBox="0 0 204.8 105.765">
-                        <path d="M0 96.334h6.747V69.7l10.445 23.227c1.232 2.8 2.92 3.806 6.228 3.806s4.93-.995 6.164-3.806L40.03 69.7v26.644h6.748v-26.6c0-2.595-1.04-3.85-3.18-4.498-5.125-1.6-8.564-.216-10.12 3.244l-10.25 22.923L13.3 68.48c-1.492-3.46-4.995-4.844-10.12-3.244C1.038 65.885 0 67.14 0 69.734v26.6zm52.386-21.686h6.745v14.68c-.063.798.256 2.67 3.952 2.727 1.886.03 14.554 0 14.672 0v-17.48h6.76c.03 0-.007 23.834-.006 23.936.037 5.878-7.294 7.155-10.672 7.254H52.533v-4.54l21.342-.001c4.342-.46 3.83-2.617 3.83-3.344v-1.77h-14.34c-6.672-.06-10.92-2.973-10.973-6.323-.005-.3.144-14.995-.004-15.14z" fill="#00618a" />
-                        <path d="M89.716 96.334h19.398c2.27 0 4.477-.475 6.23-1.298 2.92-1.34 4.347-3.157 4.347-5.536v-4.93c0-1.947-1.622-3.763-4.8-4.974-1.687-.65-3.763-.995-5.774-.995h-8.175c-2.724 0-4.022-.822-4.346-2.638-.065-.216-.065-.4-.065-.606v-3.07c0-.173 0-.347.065-.563.324-1.384 1.038-1.774 3.438-2 .195 0 .454-.044.65-.044h19.268v-4.497h-18.944c-2.725 0-4.152.173-5.45.562C91.532 67 89.78 69 89.78 72.46v3.936c0 3.028 3.44 5.623 9.212 6.228.65.043 1.298.086 1.946.086h7.007c.26 0 .52 0 .714.044 2.14.173 3.05.562 3.698 1.34.4.4.52.78.52 1.2v3.936c0 .476-.324 1.082-.973 1.6-.584.52-1.557.865-2.855.952-.26 0-.454.043-.713.043h-18.62v4.498zm72.064-7.828c0 4.628 3.438 7.223 10.38 7.742a29.45 29.45 0 0 0 1.946.086h17.582v-4.498h-17.712c-3.957 0-5.45-.995-5.45-3.374v-23.27h-6.747v23.312zm-37.785.234V72.705c0-4.074 2.86-6.545 8.516-7.325a12.94 12.94 0 0 1 1.821-.13h12.807a13.87 13.87 0 0 1 1.886.13c5.656.78 8.516 3.25 8.516 7.325V88.74c0 3.305-1.215 5.074-4.015 6.227l6.646 6h-7.834l-5.377-4.854-5.413.343h-7.216c-1.235 0-2.535-.174-3.966-.564-4.3-1.17-6.37-3.424-6.37-7.152zm7.283-.4c0 .217.065.433.13.694.4 1.864 2.145 2.904 4.8 2.904h6.13l-5.63-5.083h7.834l4.9 4.433c.905-.482 1.5-1.22 1.7-2.167.065-.216.065-.433.065-.65V73.096c0-.173 0-.4-.065-.607-.4-1.733-2.146-2.73-4.746-2.73H136.22c-3 0-4.94 1.3-4.94 3.337v15.256z" fill="#e48e00" />
-                        <g fill="#00618a">
-                            <path d="M197.624 57.73c-4.147-.112-7.316.273-10.024 1.415-.77.325-1.997.333-2.123 1.298.423.443.49 1.105.825 1.65.647 1.047 1.74 2.45 2.713 3.184 1.064.803 2.16 1.663 3.303 2.36 2.03 1.238 4.296 1.945 6.25 3.184 1.152.73 2.296 1.65 3.42 2.476.555.408.93 1.042 1.65 1.297v-.118c-.38-.483-.477-1.147-.825-1.65l-1.533-1.533c-1.5-2-3.402-3.737-5.425-5.19-1.613-1.158-5.224-2.722-5.897-4.6l-.118-.118c1.144-.13 2.483-.543 3.54-.825 1.773-.475 3.358-.353 5.19-.825l2.477-.708v-.472c-.926-.95-1.586-2.207-2.595-3.066-2.64-2.25-5.523-4.495-8.49-6.37-1.646-1.04-3.68-1.714-5.425-2.595-.587-.296-1.618-.45-2.005-.944-.916-1.168-1.415-2.65-2.122-4-1.48-2.85-2.934-5.964-4.246-8.963-.895-2.045-1.48-4.062-2.594-5.897-5.355-8.804-11.12-14.118-20.048-19.34-1.9-1.11-4.187-1.55-6.605-2.123l-3.892-.236c-.792-.33-1.616-1.3-2.36-1.77-2.958-1.87-10.545-5.933-12.736-.6-1.383 3.373 2.067 6.664 3.302 8.374.866 1.2 1.976 2.543 2.594 3.892.407.886.478 1.775.826 2.713.857 2.3 1.603 4.823 2.712 6.958.56 1.08 1.178 2.218 1.887 3.184.435.593 1.18.854 1.297 1.77-.728 1.02-.77 2.6-1.18 3.892-1.843 5.812-1.148 13.035 1.533 17.337.823 1.32 2.76 4.152 5.425 3.066 2.33-.95 1.8-3.89 2.477-6.486.15-.59.058-1.02.354-1.415v.118l2.123 4.245c1.57 2.53 4.36 5.175 6.722 6.96 1.225.925 2.2 2.525 3.774 3.066v-.118h-.118c-.307-.48-.787-.677-1.18-1.06-.923-.905-1.95-2.03-2.713-3.066-2.15-2.918-4.048-6.11-5.778-9.435-.826-1.587-1.545-3.338-2.24-4.953-.268-.623-.265-1.564-.825-1.887-.763 1.184-1.887 2.14-2.477 3.538-.944 2.234-1.066 4.958-1.415 7.784-.207.074-.115.023-.236.118-1.642-.396-2.22-2.087-2.83-3.538-1.544-3.67-1.83-9.576-.472-13.798.35-1.092 1.94-4.534 1.297-5.543-.307-1.007-1.32-1.6-1.887-2.36-.7-.95-1.402-2.204-1.887-3.302-1.264-2.86-1.854-6.07-3.184-8.963-.636-1.382-1.71-2.78-2.594-4-.978-1.36-2.073-2.364-2.83-4-.27-.585-.636-1.52-.236-2.123a.93.93 0 0 1 .708-.708c.684-.527 2.59.175 3.302.472 1.89.786 3.47 1.534 5.072 2.595.77.5 1.547 1.496 2.476 1.77h1.06c1.66.382 3.52.12 5.07.59 2.742.833 5.198 2.13 7.43 3.538 6.798 4.292 12.355 10.402 16.157 17.7.612 1.173.876 2.294 1.415 3.538 1.087 2.5 2.456 5.093 3.538 7.547 1.08 2.45 2.13 4.92 3.656 6.958.802 1.07 3.9 1.646 5.307 2.24.987.417 2.603.852 3.538 1.415 1.785 1.077 3.515 2.36 5.19 3.54.837.59 3.41 1.883 3.538 2.948z" />
-                            <path d="M144.91 12.798c-.865-.016-1.476.094-2.123.236v.118h.118c.412.848 1.14 1.393 1.65 2.123l1.18 2.476.118-.118c.73-.515 1.065-1.338 1.06-2.595-.293-.308-.336-.694-.59-1.062-.337-.49-1-.768-1.415-1.18z" fill-rule="evenodd" />
-                        </g>
-                        <path d="M194.855 91.708c0 2.97 2.347 4.972 4.972 4.972s4.972-2.002 4.972-4.972-2.347-4.972-4.972-4.972-4.972 2.002-4.972 4.972zm8.83 0c0 2.254-1.723 3.938-3.86 3.938-2.16 0-3.86-1.684-3.86-3.938s1.698-3.938 3.86-3.938c2.135 0 3.86 1.684 3.86 3.938zm-2.52 2.838h1.113l-1.63-2.492c.875-.093 1.537-.518 1.537-1.552 0-1.154-.73-1.63-2.134-1.63h-2.215v5.675h.955v-2.453h.888l1.485 2.453zm-2.374-3.25v-1.63h1.1c.57 0 1.26.106 1.26.77 0 .795-.623.862-1.34.862h-1.02z" fill="#e48e00" fill-rule="evenodd" />
-                    </svg>
-              </div>
-              <div className="item item3">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="64" height="64" fill="#00749a">
-                        <path d="M2.26 16c0 5.45 3.13 10.145 7.7 12.348L3.478 10.435C2.725 12.174 2.26 14.03 2.26 16zm23.015-.696c0-1.68-.638-2.9-1.16-3.768-.696-1.16-1.333-2.087-1.333-3.246 0-1.275.986-2.435 2.32-2.435h.174C22.84 3.594 19.594 2.26 16 2.26A13.95 13.95 0 0 0 4.522 8.463h.87c1.45 0 3.652-.174 3.652-.174.754-.058.812 1.043.116 1.16 0 0-.754.116-1.565.116l4.986 14.84 3.014-8.986-2.145-5.855L12 9.45c-.754-.058-.638-1.16.058-1.16 0 0 2.26.174 3.594.174 1.45 0 3.652-.174 3.652-.174.754-.058.812 1.043.116 1.16 0 0-.754.116-1.565.116L22.84 24.35l1.4-4.58c.58-1.913 1.043-3.246 1.043-4.464zm-9.043 1.913L12.116 29.16c1.217.348 2.55.58 3.884.58 1.623 0 3.13-.3 4.58-.754-.058-.058-.058-.116-.116-.174zM28.058 9.45l.116 1.4c0 1.4-.232 2.957-1.043 4.928l-4.174 12.116c4.058-2.377 6.84-6.783 6.84-11.884-.058-2.377-.696-4.58-1.74-6.55zM16 0C7.188 0 0 7.188 0 16s7.188 16 16 16 16-7.188 16-16S24.812 0 16 0zm0 31.304C7.594 31.304.754 24.464.754 16A15.27 15.27 0 0 1 16 .754 15.27 15.27 0 0 1 31.246 16c0 8.464-6.84 15.304-15.246 15.304z" />
-                    </svg>
-              </div>
-              <div className="item item4">
-                <img src={apache} alt="Apache Logo" />
-              </div>
-              <div className="item item5"><img src={xampp} width={85} alt="" /></div>
-              <div className="item item6"><img src={jquery} width={85} alt="" /></div>
-              {/* <div className="item item7"><img src={linux} width={85} alt="" /></div> */}
-              <div className="item item8"><img src={nodejs} width={85} alt="" /></div>
-              <div className="item item9"><img src={react} width={85} alt="" /></div>  
-              <div className="item item10"><img src={nextjs} width={85} alt="" /></div>
-          </div>
+          <div className='slider section'>
+            <h1 className='gradient__text'>My Skills</h1>
+            <p className='gradient__text'>I have experience with the following technologies:</p>
+            <div className="list">
+                  <div className="item item1">
+                        <img src={html} alt='HTML Logo' className="Desk" />
+                        <img src={htmlMob} alt='HTML Logo' className="Mob" />
+                  </div>
+                  <div className="item item2">
+                        <img src={css} alt='CSS Logo' className="Desk" />
+                        <img src={cssMob} alt='CSS Logo' className="Mob" />
+                  </div>
+                  <div className="item item3">
+                        <img src={javascript} alt='JS Logo' className="Desk" />
+                        <img src={javascriptMob} alt='JS Logo' className="Mob" />
+                  </div>
+                  <div className="item item4">
+                        <img src={jquery} alt='jQuery Logo' className="Desk" />
+                        <img src={jqueryMob} alt='jQuery Logo' className="Mob" />
+                  </div>
+                  <div className="item item5">
+                        <img src={php} alt="PHP Logo" className="Desk" />
+                        <img src={phpMob} alt="PHP Logo" className="Mob" />
+                  </div>
+                  <div className="item item6">
+                        <img src={phpMyAdmin} alt="phpMyAdmin Logo" className="Desk" />
+                        <img src={phpMyAdminMob} alt="phpMyAdmin Logo" className="Mob" />
+                  </div>
+                  <div className="item item7">
+                        <img src={wordpress} alt="Wordpress Logo" className="Desk" />
+                        <img src={wordpressMob} alt="Wordpress Logo" className="Mob" />
+                  </div>
+                  <div className="item item8">
+                        <img src={apache} alt="Apache Logo" className="Desk" />
+                        <img src={apacheMob} alt="Apache Logo" className="Mob" />
+                  </div>
+                  <div className="item item9">
+                        <img src={xampp} alt="Xampp Logo" />
+                  </div>
+                  <div className="item item10">
+                        <img src={cordova} alt="Cordova Logo" className="Desk" />
+                        <img src={cordovaMob} alt="Cordova Logo" className="Mob" />
+                  </div>
+                  <div className="item item11">
+                        <img src={linux} alt="Linux Logo" className="Desk" />
+                        <img src={linuxMob} alt="Linux Logo" className="Mob" />
+                  </div>
+                  <div className="item item12">
+                        <img src={node} alt="Node Logo" className="Desk" />
+                        <img src={nodeMob} alt="Node Logo" className="Mob" />
+                  </div>
+                  <div className="item item13">
+                        <img src={react} alt="ReactJS Logo" className="Desk" />
+                        <img src={reactMob} alt="ReactJS Logo" className="Mob" />
+                  </div>
+                  <div className="item item14">
+                        <img src={mongodb} alt="MongoDB Logo" className="Desk" />
+                        <img src={mongodbMob} alt="MongoDB Logo" className="Mob" />
+                  </div>
+                  <div className="item item15">
+                        <img src={next} alt="NextJS Logo" className="Desk" />
+                        <img src={nextMob} alt="NextJS Logo" className="Mob" />
+                  </div>
+                  <div className="item item16">
+                        <img src={tailwindCss} alt="Tailwind CSS Logo" className="Desk" />
+                        <img src={tailwindCssMob} alt="Tailwind CSS Logo" className="Mob" />
+                  </div>
+            </div>
         </div>
 
     )
